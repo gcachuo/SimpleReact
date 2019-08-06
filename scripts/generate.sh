@@ -5,8 +5,6 @@ mkdir -p interfaces
 mkdir -p styles/components
 mkdir -p ../www
 
-ln -s ../api ../www/api
-
 cp config/files/components/template.index.tsx components/index.tsx
 cp config/files/components/template.app.tsx components/app.tsx
 cp config/files/interfaces/template.toastr.ts interfaces/toastr.ts
@@ -34,3 +32,5 @@ fi
 
 yarn
 yarn build
+
+cd ../www && ln -sfn ../api ./api
