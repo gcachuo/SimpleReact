@@ -19,7 +19,7 @@ export class Navbar extends React.Component {
     render() {
         return (
             <>
-                <a href="" className="navbar-brand"><Title/></a>
+                <a href="" className="navbar-brand">{Title}</a>
                 <form className="form-inline">
                     <div className="col">
                         <a href="" className="btn btn-sm btn-outline-secondary"> </a>
