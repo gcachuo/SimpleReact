@@ -11,8 +11,8 @@ require('bootstrap');
 require("babel-polyfill");
 require('datatables.net-dt/css/jquery.dataTables.css');
 
-require('./index');
+const imports = require('./index');
 require('./styles/index.scss');
 require('./components');
 
-export {React, ReactDOM, BrowserRouter, Route, $, toastr, dt, numeral};
+export {React, ReactDOM, BrowserRouter, Route, $, toastr, dt, numeral, imports};
