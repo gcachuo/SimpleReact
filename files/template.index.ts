@@ -1,3 +1,3 @@
-const {ReactDOM, React, $, BrowserRouter, Route} = require('./lib/imports');
+const {ReactDOM, React, $, BrowserRouter, Route} = require('./###LIB###/imports');
 
 export {ReactDOM, React, $, BrowserRouter, Route};

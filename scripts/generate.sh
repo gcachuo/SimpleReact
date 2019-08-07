@@ -9,7 +9,7 @@ cd -
 
 cp files/template.htaccess ../../.htaccess
 
-cp files/components/template.index.tsx ../components/index.tsx
+cp files/components/template.render.tsx ../components/render.tsx
 cp files/components/template.app.tsx ../components/app.tsx
 cp files/styles/template.app.scss ../styles/app.scss
 
@@ -31,17 +31,17 @@ else
     sed -i "s/###PROJECT###/$project/g" ../package.json
     read -p "Enter the BASENAME:" BASENAME
     sed -i "s/###BASENAME###/\/$BASENAME/g" ../package.json
-    read -p "Enter the LIB:" LIB
-    sed -i "s/###LIB###/$LIB/g" ../package.json
-
-    cd ..
-    ln -sfn $LIB/webpack.config.js webpack.config.js
-    cd -
 fi
+
+read -p "Enter the LIB:" LIB
+sed -i "s/###LIB###/$LIB/g" ../package.json
+sed -i "s/###LIB###/$LIB/g" ../index.ts
 
 yarn
 
 cd ..
+
+ln -sfn $LIB/webpack.config.js webpack.config.js
 
 yarn
 yarn build

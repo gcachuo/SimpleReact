@@ -11,6 +11,6 @@ require('bootstrap');
 require("babel-polyfill");
 
 require('./imports.scss');
-require('../components/index');
+require('../components/render');
 
 export {React, ReactDOM, BrowserRouter, Route, $, toastr, dt, numeral};
