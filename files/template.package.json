@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf ../www/assets",
     "build": "yarn clean && webpack -p --env.BASENAME=###BASENAME###/",
-    "watch": "yarn clean && webpack -d -w --env.BASENAME=###BASENAME###/www/"
+    "watch": "yarn clean && webpack -d -w --env.BASENAME=###BASENAME###/"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
