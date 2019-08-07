@@ -5,6 +5,8 @@ mkdir -p interfaces
 mkdir -p styles/components
 mkdir -p ../www
 
+cp config/files/template.htaccess ../.htaccess
+
 cp config/files/components/template.index.tsx components/index.tsx
 cp config/files/components/template.app.tsx components/app.tsx
 cp config/files/interfaces/template.toastr.ts interfaces/toastr.ts
