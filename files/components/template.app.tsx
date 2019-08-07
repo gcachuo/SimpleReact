@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, React, Route} from "../###LIB###/imports";
+import {BrowserRouter as Router, React, Route} from "../index";
 
 declare const BASENAME;
 

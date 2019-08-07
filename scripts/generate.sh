@@ -32,9 +32,6 @@ else
     sed -i "s/###BASENAME###/\/$BASENAME/g" ../package.json
     read -p "Enter the LIB:" LIB
     sed -i "s/###LIB###/$LIB/g" ../package.json
-
-    sed -i "s/###LIB###/$LIB/g" ../components/app.tsx
-    sed -i "s/###LIB###/$LIB/g" ../components/index.tsx
 fi
 
 yarn
