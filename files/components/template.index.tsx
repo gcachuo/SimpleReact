@@ -1,4 +1,4 @@
-import {ReactDOM, React, $} from '../imports';
+import {ReactDOM, React, $} from '../###LIB###/imports';
 import App, {Navbar, Title} from './app';
 
 export const Api = {url: 'api/'};
