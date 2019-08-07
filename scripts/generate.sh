@@ -36,6 +36,8 @@ else
     sed -i "s/###BASENAME###/\/$BASENAME/g" ../package.json
 fi
 
+yarn
+
 cd ..
 
 yarn

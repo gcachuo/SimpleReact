@@ -5,7 +5,7 @@ module.exports = env => {
     return {
         entry: path.resolve(__dirname, 'imports.ts'),
         output: {
-            path: path.resolve(__dirname, '../www/assets'),
+            path: path.resolve(__dirname, '../../www/assets'),
             filename: 'bundle.js'
         },
         resolve: {
