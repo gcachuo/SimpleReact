@@ -12,6 +12,7 @@ cp files/template.htaccess ../../.htaccess
 cp files/components/template.index.tsx ../components/index.tsx
 cp files/components/template.app.tsx ../components/app.tsx
 cp files/interfaces/template.toastr.ts ../interfaces/toastr.ts
+cp files/styles/template.index.scss ../styles/index.scss
 cp files/styles/template.app.scss ../styles/app.scss
 
 cp files/www/template.htaccess ../../www/.htaccess
@@ -20,6 +21,7 @@ cp files/www/template.gitignore ../../www/.gitignore
 
 cp files/template.gitignore ../.gitignore
 cp files/template.imports.ts ../imports.ts
+cp files/template.index.ts ../index.ts
 cp files/template.tsconfig.json ../tsconfig.json
 cp files/template.webpack.config.js ../webpack.config.js
 

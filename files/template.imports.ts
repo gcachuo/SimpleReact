@@ -11,6 +11,7 @@ require('bootstrap');
 require("babel-polyfill");
 require('datatables.net-dt/css/jquery.dataTables.css');
 
+require('./index');
 require('./styles/index.scss');
 require('./components');
 
