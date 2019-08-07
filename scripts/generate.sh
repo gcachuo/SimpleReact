@@ -19,6 +19,7 @@ cp files/www/template.index.html ../../www/index.html
 cp files/www/template.gitignore ../../www/.gitignore
 
 cp files/template.gitignore ../.gitignore
+cp files/template.htaccess ../.htaccess
 cp files/template.index.ts ../index.ts
 
 FILE=../package.json
@@ -32,6 +33,10 @@ else
     sed -i "s/###BASENAME###/\/$BASENAME/g" ../package.json
     read -p "Enter the LIB:" LIB
     sed -i "s/###LIB###/$LIB/g" ../package.json
+
+    cd ..
+    ln -sfn $LIB/webpack.config.js webpack.config.js
+    cd -
 fi
 
 yarn

@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf ../www/assets",
-    "build": "yarn clean && cd ###LIB### && webpack -p --env.BASENAME=###BASENAME###/",
-    "watch": "yarn clean && cd ###LIB### && webpack -d -w --env.BASENAME=###BASENAME###/"
+    "build": "yarn clean && webpack -p --env.BASENAME=###BASENAME###/",
+    "watch": "yarn clean && webpack -d -w --env.BASENAME=###BASENAME###/"
   }
 }
