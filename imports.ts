@@ -3,7 +3,7 @@ const
     ReactDOM = require("react-dom"),
     {BrowserRouter, Route} = require('react-router-dom'),
     $ = require("jquery"),
-    toastr: Toastr = require("toastr"),
+    toastr = require("toastr"),
     dt = require('datatables.net'),
     numeral = require('numeral');
 
