@@ -5,6 +5,8 @@
     "generate": "./scripts/generate.sh"
   },
   "dependencies": {
+    "@material-ui/core": "^4.3.2",
+    "@material-ui/icons": "^4.2.1",
     "bootstrap": "^4.3.1",
     "datatables.net": "^1.10.19",
     "datatables.net-dt": "^1.10.19",

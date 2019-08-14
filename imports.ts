@@ -5,7 +5,8 @@ const
     $ = require("jquery"),
     toastr = require("toastr"),
     dt = require('datatables.net'),
-    numeral = require('numeral');
+    numeral = require('numeral')
+;
 
 require('bootstrap');
 require("babel-polyfill");
