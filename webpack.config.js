@@ -15,7 +15,12 @@ module.exports = env => {
             new webpack.DefinePlugin({
                 BASENAME: JSON.stringify(env.BASENAME || '/')
             }),
-            new ExtractTextPlugin({filename: 'bundle.css', allChunks: true})
+            new ExtractTextPlugin({filename: 'bundle.css', allChunks: true}),
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery",
+                Popper: "popper.js"
+            })
         ],
         module: {
             rules: [
