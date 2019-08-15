@@ -3,8 +3,8 @@ const
     ReactDOM = require("react-dom"),
     ReactRouterDOM = require('react-router-dom'),
     $ = require("jquery"),
-    toastr = require("toastr"),
-    dt = require('datatables.net'),
+    toastr: Toastr = require("toastr"),
+    DataTables = require('datatables.net'),
     numeral = require('numeral')
 ;
 
@@ -14,4 +14,4 @@ require("babel-polyfill");
 require('./imports.scss');
 require('../components/render');
 
-export {React, ReactDOM, $, toastr, dt, numeral, ReactRouterDOM};
+export {React, ReactDOM, $, toastr, numeral, ReactRouterDOM};
