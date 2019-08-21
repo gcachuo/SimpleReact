@@ -2,6 +2,7 @@ cd ..
 
 mkdir -p components/pages
 mkdir -p interfaces
+mkdir -p img
 mkdir -p styles/components
 mkdir -p www
 
@@ -13,6 +14,7 @@ cp files/components/template.render.tsx ../components/render.tsx
 cp files/components/template.app.tsx ../components/app.tsx
 cp files/components/pages/template.Dashboard.tsx ../components/pages/Dashboard.tsx
 cp files/styles/template.app.scss ../styles/app.scss
+cp files/styles/template._custom_variables.scss ../styles/_custom_variables.scss
 
 cp files/www/template.htaccess ../www/.htaccess
 cp files/www/template.index.html ../www/index.html

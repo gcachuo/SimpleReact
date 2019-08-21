@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 module.exports = env => {
     return {
         entry: path.resolve(__dirname, 'imports.ts'),
@@ -20,7 +21,10 @@ module.exports = env => {
                 $: "jquery",
                 jQuery: "jquery",
                 Popper: "popper.js"
-            })
+            }),
+            new CopyPlugin([
+                { from: 'img', to: '../img' },
+            ]),
         ],
         module: {
             rules: [
