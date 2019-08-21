@@ -11,11 +11,12 @@ cp files/template.htaccess ../../.htaccess
 
 cp files/components/template.render.tsx ../components/render.tsx
 cp files/components/template.app.tsx ../components/app.tsx
+cp files/components/pages/template.Dashboard.tsx ../components/pages/Dashboard.tsx
 cp files/styles/template.app.scss ../styles/app.scss
 
-cp files/www/template.htaccess ../../www/.htaccess
-cp files/www/template.index.html ../../www/index.html
-cp files/www/template.gitignore ../../www/.gitignore
+cp files/www/template.htaccess ../www/.htaccess
+cp files/www/template.index.html ../www/index.html
+cp files/www/template.gitignore ../www/.gitignore
 
 cp files/template.gitignore ../.gitignore
 cp files/template.htaccess ../.htaccess
