@@ -1,19 +1,12 @@
-import {ReactDOM, React, $} from '../index';
-import App, {Navbar, Title} from './app';
+import {ReactDOM, React, $, ReactRouterDOM} from '../index';
+import App, {Logo, Navbar, Title} from './app';
+declare const BASENAME;
 
-export const Api = {url: 'api/'};
+$("title").text(Title);
+$("[rel='shortcut icon']").attr('href', Logo.favicon);
 
-ReactDOM.render(
-    Title,
-    $("title")[0]
-);
-
-ReactDOM.render(
-    <Navbar/>,
-    $(".navbar")[0]
-);
-
-ReactDOM.render(
-    <App/>,
-    $("#app")[0]
-);
+// @ts-ignore
+ReactDOM.render((<ReactRouterDOM.BrowserRouter basename={BASENAME}><Navbar/><App>
+    <ReactRouterDOM.Route exact path="/" component=""/>
+</App>
+</ReactRouterDOM.BrowserRouter>), $("#app")[0]);

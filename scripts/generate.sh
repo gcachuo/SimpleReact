@@ -42,6 +42,7 @@ yarn
 cd ..
 
 ln -sfn $LIB/webpack.config.js webpack.config.js
+ln -sfn $LIB/tsconfig.json tsconfig.json
 
 yarn
 yarn build

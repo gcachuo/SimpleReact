@@ -1,5 +1,5 @@
 require('./styles/app.scss');
 
-const {ReactDOM, React, $, BrowserRouter, Route} = require('./###LIB###/imports');
+const {ReactDOM, React, $, BrowserRouter, Route,ReactRouterDOM} = require('./lib/imports');
 
-export {ReactDOM, React, $, BrowserRouter, Route};
+export {ReactDOM, React, $, BrowserRouter, Route,ReactRouterDOM};

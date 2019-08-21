@@ -1,41 +1,75 @@
-import {BrowserRouter as Router, React, Route} from "../index";
+import {React, $, ReactRouterDOM} from "../index";
 
-declare const BASENAME;
+export const Api = {url: 'api/'};
 
+export const Logo = {
+    regular: '',
+    small: '',
+    favicon: ''
+};
 export const Title = "";
 
+@ReactRouterDOM.withRouter
 export class Navbar extends React.Component {
-    private state: {  };
+    state: {
+        module: string;
+    };
 
     constructor(props) {
         super(props);
-        this.state = { };
+        this.state = {module: this.props.history.location.pathname};
+        this.props.history.listen((location, action) => {
+            this.state.module = this.props.history.location.pathname;
+        });
     }
 
-    componentDidMount() {
+    componentDidMount(): void {
+        this.setState({module: this.props.history.location.pathname});
+    }
+
+    render() {
+        return (
+            <nav className="navbar navbar-light bg-light">
+                <span>
+                    <img src={Logo.small} alt="logo"/>
+                    <a href="./" className="navbar-brand">
+                        {Title}
+                    </a>
+                </span>
+                <form className="form-inline">
+                    {this.props.history.location.pathname !== '/login' ? <Navbar.LoggedIn/> : ''}
+                </form>
+            </nav>
+        );
+    }
+}
+
+
+@ReactRouterDOM.withRouter
+export default class App extends React.Component {
+    state: {
+    };
+
+    constructor(props) {
+        super(props);
+        App.changeState = App.changeState.bind(this);
+    }
+
+    static changeState(state) {
+        this.setState(state);
+    }
+
+    componentDidUpdate(prevProps, props) {
 
     }
 
     render() {
         return (
             <>
-                <a href="" className="navbar-brand">{Title}</a>
-                <form className="form-inline">
-                    <div className="col">
-                        <a href="" className="btn btn-sm btn-outline-secondary"> </a>
-                    </div>
-                </form>
+                <div className="container pt-3">
+                    {!!this.state ? this.props.children : 'Loading...'}
+                </div>
             </>
-        );
-    }
-}
-
-export default class App extends React.Component {
-    render() {
-        return (
-            <Router basename={BASENAME}>
-                <Route exact path="/" component=""/>
-            </Router>
-        );
+        )
     }
 }
