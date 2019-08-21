@@ -46,8 +46,7 @@ export class Navbar extends React.Component {
 
 @ReactRouterDOM.withRouter
 export default class App extends React.Component {
-    state: {
-    };
+    state: {};
 
     constructor(props) {
         super(props);
@@ -66,7 +65,7 @@ export default class App extends React.Component {
         return (
             <>
                 <div className="container pt-3">
-                    {!!this.state ? this.props.children : 'Loading...'}
+                    {this.props.children}
                 </div>
             </>
         )
