@@ -3,7 +3,7 @@ cd ..
 mkdir -p components/pages
 mkdir -p interfaces
 mkdir -p styles/components
-mkdir -p ../www
+mkdir -p www
 
 cd -
 
@@ -21,7 +21,6 @@ cp files/www/template.gitignore ../www/.gitignore
 cp files/template.gitignore ../.gitignore
 cp files/template.htaccess ../.htaccess
 cp files/template.index.ts ../index.ts
-cp files/template.index.scss ../index.scss
 
 FILE=../package.json
 if [ -f "$FILE" ]; then

@@ -37,7 +37,6 @@ export class Navbar extends React.Component {
                     </a>
                 </span>
                 <form className="form-inline">
-                    {this.props.history.location.pathname !== '/login' ? <Navbar.LoggedIn/> : ''}
                 </form>
             </nav>
         );
