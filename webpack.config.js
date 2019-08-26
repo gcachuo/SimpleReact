@@ -24,6 +24,7 @@ module.exports = env => {
             }),
             new CopyPlugin([
                 { from: 'img', to: '../img' },
+                { from: 'images', to: '../images' },
             ]),
         ],
         module: {
