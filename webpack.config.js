@@ -7,6 +7,7 @@ module.exports = env => {
         entry: path.resolve(__dirname, 'imports.ts'),
         output: {
             path: path.resolve(__dirname, '../../www/assets'),
+            publicPath: 'www/assets',
             filename: 'bundle.js'
         },
         resolve: {
@@ -23,8 +24,7 @@ module.exports = env => {
                 Popper: "popper.js"
             }),
             new CopyPlugin([
-                { from: 'img', to: '../img' },
-                { from: 'images', to: '../images' },
+                {from: 'img', to: '../img'},
             ]),
         ],
         module: {
