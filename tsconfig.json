@@ -1,23 +1,8 @@
 {
   "compilerOptions": {
-    "module": "es6",
-    "target": "es5",
-    "jsx": "react",
-    "allowJs": true,
-    "moduleResolution": "Node",
-    "lib": ["es6", "dom"],
-    "sourceMap": true,
-    "rootDir": "src",
-    "strictNullChecks": true,
-    "experimentalDecorators": true
+    "jsx": "react"
   },
   "include": [
-    "**/*.js",
-    "**/*.jsx",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "**/template.*"
+    "*.tsx"
   ]
 }
