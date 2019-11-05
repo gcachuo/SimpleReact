@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactRouterDOM from "react-router-dom";
-import * as Components from "./components"
+import * as Components from "./components";
 
 declare const BASENAME;
 
