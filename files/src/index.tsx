@@ -8,7 +8,8 @@ export default class App extends React.Component {
     render() {
         return (
             <ReactRouterDOM.BrowserRouter basename={BASENAME}>
-                <ReactRouterDOM.Route path="/" component={Components.Dashboard}/>
+                <ReactRouterDOM.Route exact path="/" component={Components.Dashboard}/>
+                <ReactRouterDOM.Route exact path="/dashboard" component={Components.Dashboard}/>
             </ReactRouterDOM.BrowserRouter>
         )
     }
