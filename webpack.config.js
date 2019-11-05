@@ -1,13 +1,13 @@
 const path = require('path');
 module.exports = {
-    entry: './lib/entry.ts',
+    entry: './lib/entry.tsx',
     output: {
         path: path.resolve(__dirname, './../../www/assets'),
         publicPath: 'www/assets',
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.tsx', '.ts']
+        extensions: ['.tsx', '.ts', '.js']
     },
     module: {
         rules: [
