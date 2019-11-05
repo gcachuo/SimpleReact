@@ -1,8 +1,13 @@
 {
   "scripts": {
-    "build": "webpack --mode production --config lib/webpack.config.js"
+    "build": "webpack --mode production --config lib/webpack.config.js",
+    "watch": "webpack --watch --mode development --config lib/webpack.config.js"
   },
   "devDependencies": {
+    "jquery": "^3.4.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.1.2",
     "ts-loader": "^6.2.1",
     "typescript": "^3.7.2",
     "webpack": "^4.41.2",
