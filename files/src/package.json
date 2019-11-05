@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "webpack --mode production --config lib/webpack.config.js",
-    "watch": "webpack --watch --mode development --config lib/webpack.config.js"
+    "build": "webpack --env.BASENAME=/ --mode production --config lib/webpack.config.js",
+    "watch": "webpack --env.BASENAME=/ --watch --mode development --config lib/webpack.config.js"
   },
   "devDependencies": {
     "jquery": "^3.4.1",
