@@ -6,7 +6,7 @@ module.exports = env => {
         entry: './lib/entry.tsx',
         output: {
             path: path.resolve(__dirname, './../../www/assets'),
-            publicPath:  path.resolve(__dirname, './../../www/assets'),
+            publicPath: path.resolve(__dirname, './../../www/assets'),
             filename: 'bundle.js'
         },
         resolve: {
@@ -42,7 +42,11 @@ module.exports = env => {
                 },
                 {
                     test: /\.(png|jpg)$/,
-                    loader: 'file-loader?name=img/[name].[ext]'
+                    loader: 'file-loader',
+                    options: {
+                        name: '[path][name].[ext]',
+                        publicPath: 'assets',
+                    },
                 },
                 {
                     test: /\.css$/,
